@@ -1,0 +1,59 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> {{title}} </title>
+        <meta name="description" content="RaspberryPi - System Information">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- STYLE -->
+        <style>
+            <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+            <link rel="stylesheet" href="static/css/normalize.css">
+            <link rel="stylesheet" href="static/css/skeleton.css">
+            <link rel="stylesheet" href="static/css/pi.css">
+            <link rel="icon" type="image/png" href="static/images/favicon.png">
+         </style>
+         <!-- SCRIPT -->
+         <script src="static/js/sort.js"></script>
+    </head>
+     <body style="background-color:#757575">
+         <div class="container" style="max-width:600px;color:#ffffff">
+             <div class="row" style="padding-top:20px;">
+                 <div class="two columns">
+                     <img src="Static/images/logo.png" style="width:60px" />
+                 </div>
+                 <div class="ten columns">
+                     <h3 style="margin-top:10px;color:#FF8C00">Raspberry Pi - Sys Info</h3>
+                 </div>
+             </div>
+                   <div class="row g-header">
+                 <h5>
+                     Generic Info
+                 </h5>
+             </div>
+             <div class="row g-row">
+                 <div class="three columns g-head">
+                     Name of the Pi
+                 </div>
+                 <div class="nine columns">
+                     {{sys_data.machine_name}}
+                 </div>
+             </div>
+              <div class="row g-row">
+                 <div class="three columns g-head">
+                     System Time
+                 </div>
+                 <div class="nine columns">
+                     {{sys_data.current_time}}
+                     <div style="text-align:right;padding-top:10px">
+                         <a href="restart" onclick="return confirm('Do you wish to re-start your system ?')" class="button button-primary" style="margin-right:10px">Restart</a>
+                         <a href="shutdown" onclick="return confirm('Do you wish to shutdown your system ?')" class="button button-primary">Shutdown</a>
+                     </div>
+                 </div>
+             </div>
+
+         </div>
+
+    </body>
+
+    </html>
