@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37eb9df6-3b77-4c7b-af3e-e0a23cf5d693" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RaspberryPi_Python.conf" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,11 +13,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RaspberryPi_Python.wsgi" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RaspberryPi_Python.wsgi" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RaspberryPi_Python.wsgi">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
               <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RaspberryPi_Python.conf" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/RaspberryPi_Python.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -32,12 +42,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/RaspberryPi_Python.wsgi" />
+        <option value="$PROJECT_DIR$/RaspberryPi_Python.conf" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="460" />
-    <option name="y" value="113" />
+    <option name="x" value="250" />
+    <option name="y" value="87" />
     <option name="width" value="935" />
     <option name="height" value="547" />
   </component>
@@ -100,7 +111,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="460" y="113" width="935" height="547" extended-state="0" />
+    <frame x="250" y="87" width="935" height="547" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24914286" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -135,6 +146,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RaspberryPi_Python.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
           <folding />
         </state>
       </provider>
