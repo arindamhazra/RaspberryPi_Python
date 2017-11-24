@@ -1,98 +1,82 @@
-            <!DOCTYPE html>
-            <html lang="en">
-            <head>
-                <meta charset="utf-8">
-                <title> {{title}} </title>
-                <meta name="description" content="RaspberryPi - System Information">
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-                <!-- STYLE -->
-                <style>
-                     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
-
-                 </style>
-                 <!-- SCRIPT -->
-                 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-                 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
-                 <script src="static/js/sort.js"></script>
-            </head>
-    <body>
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-              <div class="dropdown-menu" aria-labelledby="dropdown01">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
-      <div class="container">
-        <div class="starter-template">
-          <h1>Bootstrap starter template</h1>
-          <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-        </div>
-
-      </div><!-- /.container -->
-           <div class="container" style="max-width:600px;color:#ffffff">
-                     <div class="row" style="padding-top:20px;">
-                         <div class="two columns">
-                             <img src="Static/images/logo.png" style="width:60px" />
-                         </div>
-                         <div class="ten columns">
-                             <h3 style="margin-top:10px;color:#FF8C00">Raspberry Pi - Sys Info</h3>
-                         </div>
-                     </div>
-                           <div class="row g-header">
-                         <h5>
-                             Generic Info
-                         </h5>
-                     </div>
-                     <div class="row g-row">
-                         <div class="three columns g-head">
-                             Name of the Pi
-                         </div>
-                         <div class="nine columns">
-                             {{sys_data.machine_name}}
-                         </div>
-                     </div>
-                      <div class="row g-row">
-                         <div class="three columns g-head">
-                             System Time
-                         </div>
-                         <div class="nine columns">
-                             {{sys_data.current_time}}
-                             <div style="text-align:right;padding-top:10px">
-                                 <a href="restart" onclick="return confirm('Do you wish to re-start your system ?')" class="button button-primary" style="margin-right:10px">Restart</a>
-                                 <a href="shutdown" onclick="return confirm('Do you wish to shutdown your system ?')" class="button button-primary">Shutdown</a>
+		<!DOCTYPE html>
+        <html>
+        <head>
+            <title> {{title}} </title>
+            <!-- STYLE -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+            <!-- SCRIPT -->
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+            <script src="static/js/sort.js"></script>
+        </head>
+        <body>
+          <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#">Raspberry Pi - Python</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="container">
+            <div class="starter-template">
+              <h1>Raspberry Pi - Python</h1>
+            </div>
+    
+          </div><!-- /.container -->
+          <div class="container">
+            <div class="row" style="padding-top:20px;">
+                <div class="two columns">
+                    <img src="Static/images/logo.png" style="width:60px" />
+                </div>
+                <div class="ten columns">
+                    <h3 style="margin-top:10px;color:#FF8C00">Raspberry Pi - Sys Info</h3>
+                </div>
+            </div>
+            <div class="row g-header">
+            <h5>Generic Info</h5>
+            </div>
+                         <div class="row g-row">
+                             <div class="three columns g-head">
+                                 Name of the Pi
+                             </div>
+                             <div class="nine columns">
+                                 {{sys_data.machine_name}}
                              </div>
                          </div>
-                     </div>
-
-                 </div>
-    
+                          <div class="row g-row">
+                             <div class="three columns g-head">
+                                 System Time
+                             </div>
+                             <div class="nine columns">
+                                 {{sys_data.current_time}}
+                                 <div style="text-align:right;padding-top:10px">
+                                     <a href="restart" onclick="return confirm('Do you wish to re-start your system ?')" class="button button-primary" style="margin-right:10px">Restart</a>
+                                     <a href="shutdown" onclick="return confirm('Do you wish to shutdown your system ?')" class="button button-primary">Shutdown</a>
+                                 </div>
+                             </div>
+                         </div>    
+                     </div>    
             </body>
-
-            </html>
+        </html>
